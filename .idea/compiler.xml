@@ -7,15 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api" />
-        <module name="model" />
         <module name="server" />
+        <module name="model" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api" target="1.8" />
       <module name="model" target="1.8" />
       <module name="server" target="1.8" />
-      <module name="springboot-dubbo" target="1.8" />
+      <module name="springboot_dubbo" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api" options="-parameters" />
+      <module name="model" options="-parameters" />
+      <module name="server" options="-parameters" />
+    </option>
   </component>
 </project>

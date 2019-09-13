@@ -11,5 +11,26 @@
 
     <artifactId>server</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>com.baidu</groupId>
+            <artifactId>model</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baidu</groupId>
+            <artifactId>api</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.10</version>
+        </dependency>
+
+
+    </dependencies>
+
 
 </project>
